@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1e23;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ECECF1;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 764px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.home {
+  display: flex;
+  gap: 20px;
+}
+
+.box-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.box-home h2
+ {
+  color: #ECECF1;
+  font-size: 18px;
+  text-align: center;
+}
+
+.box-home i {
+  color: #421BAC;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+.box-home p {
+  background: #40414f;
+  padding: 0.8rem;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  color: #ECECF1;
+  border: 1px solid #421BAC;
+  cursor: pointer;
+}
+
+.box-home p:hover {
+  background: #2f303b;
+}
+
+.questions {
+  padding-top: 30px 0;
+}
+
+.questions,
+.results {
+  width: 100%;
+  display: flex;
+}
+.results {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 764px;
+}
+#question {
+  border: none;
+  outline: 0;
+  border-radius: 8px 0 0 8px;
+  height: 50px;
+  padding: 0 14px;
+  background: #40414f;
+  color: #ECECF1;
+  width: 90%;
+}
+
+.questions button {
+  width: 10%;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background: #421BAC;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.questions button i{
+  font-size: 19px;
+  width: 100%;
+  color: #ECECF1;
+}
+
+.question-chat,
+.result-chat,
+.loading-chat,
+.error-chat {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 8px;
+  height: auto;
+  padding:12px 14px;
+  width: 100%;
+  color: #ECECF1;
+  line-height: 1.6rem;
+  transition: all .5s;
+}
+
+.result-chat,
+.loading-chat {
+  background: #40414f; 
+}
+
+
+.loading-chat {
+  display: none;
+}
+
+.error-chat {
+  background: #554652;
+  border: 1px solid #99454C;
+}
+
+@media (max-width: 800px) {
+  .home {
+    justify-content: center;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    flex-wrap: wrap;
+  }
+  .container {
+    padding: 20px;
+    height: auto;;
+  }
+}

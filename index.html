@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Chat GPT</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <main>
+  <div class="container">
+   
+      <h1>Clone ChatGPT</h1>
+
+    <div class="home">
+      <div class="box-home">
+        <i class="fa-solid fa-sun"></i>
+        <h2>Examples</h2>
+        <p>"Explain quantum computing in simple terms"</p>
+        <p>"Got any creative ideas for a 10 year old's birthday?"</p>
+        <p>"How do I make an HTTP request in Javascript?"</p>
+      </div>
+      <div class="box-home">
+        <i class="fa-solid fa-bolt"></i>
+        <h2>Capabilities</h2>
+        <p>"Remembers what user said earlier in the conversation"</p>
+        <p>"Allows user to provide follow-up corrections"</p>
+        <p>"Trained to decline inappropriate requests"</p>
+      </div>
+      <div class="box-home">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h2>Limitations</h2>
+        <p>"May occasionally generate incorrect information"</p>
+        <p>"May occasionally produce harmful instructions or biased content"</p>
+        <p>"Limited knowledge of world and events after 2021"</p>
+      </div>
+    </div>
+    
+    <div class="results">
+      <!-- <div class="loading-chat">
+        <p>...</p>
+      </div> -->
+    </div>
+
+    <div class="loading-chat">
+      <p></p>
+    </div>
+  
+    <div class="questions">
+      <input id="question" placeholder="Send message" />
+      <button id="SendQuestion"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+
+  </div>
+ </main>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
