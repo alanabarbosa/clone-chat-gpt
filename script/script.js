@@ -7,7 +7,8 @@ const loadingBox = document.querySelector('.loading-chat');
 const loading = document.querySelector('.loading-chat p');
 const examples = document.querySelectorAll('.box-home p');
 
-const OPENAI_API_KEY = '';
+
+const OPENAI_API_KEY = ''; //INSERT YOUR API KEY
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 question.focus();
